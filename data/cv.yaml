@@ -272,13 +272,23 @@ experience:
 
 projects:
   - name: "GhostDog CV"
+    type: "fullstack"
     stack: ["FastAPI", "React", "TypeScript", "Claude API", "Rich", "Typer"]
     description: >
       CV multi-rendu : API REST, CLI, site web, PDF, agent IA conversationnel.
       Une seule source de données YAML alimente 5 rendus différents.
     url: "https://github.com/Laseguue/ghostdog-cv"
 
+  - name: "Site Vitrine Artiste"
+    type: "fullstack"
+    stack: ["React", "Vite", "React Router", "CSS"]
+    description: >
+      Site vitrine multi-page pour un artiste peintre : galerie, blog,
+      landing page, pages détaillées par œuvre. Design sur mesure.
+    url: "https://lassegueart.com"
+
   - name: "Agent IA Reporting Financier"
+    type: "fullstack"
     stack: ["Python", "Claude API", "API integrations"]
     description: >
       Agent IA qui corrèle les données entre emails, systèmes de paiement,
@@ -287,19 +297,14 @@ projects:
       Démo visuelle disponible, lancement imminent.
 
   - name: "Agent IA Formations RNCP"
+    type: "fullstack"
     stack: ["Python", "Claude API", "FastAPI"]
     description: >
       Agent IA spécialisé qui analyse et guide les utilisateurs sur les
       formations en rapport avec les fiches RNCP françaises.
 
-  - name: "Site Vitrine Artiste"
-    stack: ["React", "Vite", "React Router", "CSS"]
-    description: >
-      Site vitrine multi-page pour un artiste peintre : galerie, blog,
-      landing page, pages détaillées par œuvre. Design sur mesure.
-    url: "https://lassegueart.com"
-
   - name: "Chat IA Multimodal"
+    type: "backend"
     stack: ["Django", "Claude API", "OpenAI", "REST API"]
     description: >
       Backend d'une application de chat IA avec support d'images, fichiers et
@@ -307,6 +312,7 @@ projects:
     url: "https://chatalienai.com"
 
   - name: "IA Finder"
+    type: "backend"
     stack: ["Django", "REST API", "PostgreSQL"]
     description: >
       Backend d'une application complète de recherche alimentée par IA.
