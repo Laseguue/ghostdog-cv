@@ -210,7 +210,7 @@ experience:
     period: "2024 - present"
     context: "Freelance solo — en parallèle d'Everping puis à plein temps"
     description: >
-      Développement d'applications web complètes pour 3 clients ainsi que des
+      Développement backend et fullstack pour 3 clients ainsi que des
       projets personnels, du site vitrine au SaaS complet avec IA.
     highlights:
       - >
@@ -218,11 +218,11 @@ experience:
         multi-page avec blog, galerie, landing page, pages détaillées par œuvre.
         Livré et en ligne.
       - >
-        Application de chat IA : backend Django, frontend React — chat avec
-        support d'images et de fichiers. Livré et en ligne.
+        Application de chat IA : développement backend Django — chat avec
+        support d'images et de fichiers. Backend uniquement, livré et en ligne.
       - >
-        Application complète IA Finder : backend Django, frontend React — moteur
-        de recherche IA complet. Livré et en ligne.
+        Application IA Finder : développement backend Django — moteur
+        de recherche IA complet. Backend uniquement, livré et en ligne.
       - >
         Projet personnel : application de corrélation factures/paiements via IA
         (démo visuelle prête, lancement imminent).
@@ -300,17 +300,17 @@ projects:
     url: "https://lassegueart.com"
 
   - name: "Chat IA Multimodal"
-    stack: ["Django", "React", "Claude API", "OpenAI"]
+    stack: ["Django", "Claude API", "OpenAI", "REST API"]
     description: >
-      Application de chat IA avec support d'images, fichiers et toutes les
-      fonctionnalités de base des LLM dans une interface unifiée.
+      Backend d'une application de chat IA avec support d'images, fichiers et
+      toutes les fonctionnalités de base des LLM. Développement backend uniquement.
     url: "https://chatalienai.com"
 
   - name: "IA Finder"
-    stack: ["Django", "React", "TypeScript"]
+    stack: ["Django", "REST API", "PostgreSQL"]
     description: >
-      Application complète de recherche alimentée par IA. Backend Django,
-      frontend React. Livrée et en production.
+      Backend d'une application complète de recherche alimentée par IA.
+      Développement backend uniquement. Livrée et en production.
     url: "https://chatgpt.fr"
 
 education:
