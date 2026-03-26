@@ -98,9 +98,11 @@ def print_experience(cv: dict[str, Any]) -> None:
         ))
 
 
-def print_projects(cv: dict[str, Any]) -> None:
-    console.print("\n[bold bright_magenta]# Projets[/]\n")
-    for p in cv["projects"]:
+def _print_project_group(projects: list, title: str) -> None:
+    if not projects:
+        return
+    console.print(f"\n[bold bright_magenta]# {title}[/]\n")
+    for p in projects:
         stack = " · ".join(p.get("stack", []))
         panel_content = Text()
         panel_content.append(f"{p['description'].strip()}\n", style="")
@@ -114,6 +116,14 @@ def print_projects(cv: dict[str, Any]) -> None:
             border_style="bright_black",
             padding=(1, 2),
         ))
+
+
+def print_projects(cv: dict[str, Any]) -> None:
+    all_projects = cv["projects"]
+    fullstack = [p for p in all_projects if p.get("type") != "backend"]
+    backend = [p for p in all_projects if p.get("type") == "backend"]
+    _print_project_group(fullstack, "Projets Fullstack")
+    _print_project_group(backend, "Projets Backend")
 
 
 def print_education(cv: dict[str, Any]) -> None:

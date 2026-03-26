@@ -120,16 +120,34 @@ function CvView() {
           </section>
         )}
 
-        {/* ── Projets ── */}
-        {cv.projects.length > 0 && (
+        {/* ── Projets Fullstack ── */}
+        {cv.projects.filter((p) => p.type !== "backend").length > 0 && (
           <section className="cv-section">
             <h2 className="cv-section__heading">
-              <span className="cv-section__icon">~</span> Projets
+              <span className="cv-section__icon">~</span> Projets Fullstack
             </h2>
             <div className="cv-grid">
-              {cv.projects.map((project) => (
-                <ProjectCard key={project.name} project={project} />
-              ))}
+              {cv.projects
+                .filter((p) => p.type !== "backend")
+                .map((project) => (
+                  <ProjectCard key={project.name} project={project} />
+                ))}
+            </div>
+          </section>
+        )}
+
+        {/* ── Projets Backend ── */}
+        {cv.projects.filter((p) => p.type === "backend").length > 0 && (
+          <section className="cv-section">
+            <h2 className="cv-section__heading">
+              <span className="cv-section__icon">~</span> Projets Backend
+            </h2>
+            <div className="cv-grid">
+              {cv.projects
+                .filter((p) => p.type === "backend")
+                .map((project) => (
+                  <ProjectCard key={project.name} project={project} />
+                ))}
             </div>
           </section>
         )}

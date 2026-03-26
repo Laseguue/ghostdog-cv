@@ -62,6 +62,7 @@ export interface Experience {
 
 export interface Project {
   name: string;
+  type?: "fullstack" | "backend";
   stack: string[];
   description: string;
   url?: string;
