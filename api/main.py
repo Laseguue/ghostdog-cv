@@ -121,6 +121,16 @@ def get_interests() -> list[dict[str, Any]]:
 
 
 @app.get(
+    "/cv/cover_letter",
+    summary="Lettre de motivation",
+    description="Retourne la lettre de motivation.",
+    tags=["CV"],
+)
+def get_cover_letter() -> str:
+    return load_cv().get("cover_letter", "")
+
+
+@app.get(
     "/pdf",
     summary="Telecharger le CV en PDF",
     description="Genere et retourne le CV au format PDF.",

@@ -148,6 +148,18 @@ def print_education(cv: dict[str, Any]) -> None:
         ))
 
 
+def print_cover_letter(cv: dict[str, Any]) -> None:
+    letter = cv.get("cover_letter", "")
+    if not letter:
+        return
+    console.print("\n[bold bright_magenta]# Lettre de motivation[/]\n")
+    console.print(Panel(
+        letter.strip(),
+        border_style="bright_black",
+        padding=(1, 2),
+    ))
+
+
 def print_full_cv(cv: dict[str, Any]) -> None:
     print_header(cv)
     console.print()

@@ -45,6 +45,10 @@ function CliDoc() {
               <span className="clidoc__desc">Projets</span>
             </div>
             <div className="clidoc__command">
+              <code className="clidoc__cmd">ghostdog-cv cover-letter</code>
+              <span className="clidoc__desc">Lettre de motivation</span>
+            </div>
+            <div className="clidoc__command">
               <code className="clidoc__cmd">ghostdog-cv chat</code>
               <span className="clidoc__desc">Discuter avec l'agent IA</span>
             </div>

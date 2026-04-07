@@ -13,6 +13,7 @@ const endpoints = [
   { method: "GET", path: "/cv/education", description: "Formation" },
   { method: "GET", path: "/cv/languages", description: "Langues" },
   { method: "GET", path: "/cv/interests", description: "Centres d'interet" },
+  { method: "GET", path: "/cv/cover_letter", description: "Lettre de motivation" },
   { method: "GET", path: "/pdf", description: "Telecharge le PDF" },
   { method: "POST", path: "/chat", description: "Discuter avec l'agent IA" },
 ];
