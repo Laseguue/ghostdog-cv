@@ -33,9 +33,6 @@ skills:
     - name: "TypeScript"
       level: "junior"
       details: "Utilisé en frontend avec React"
-    - name: "HTML / CSS"
-      level: "intermédiaire"
-      details: "Intégration et mise en page"
 
   backend:
     - name: "FastAPI"
@@ -44,22 +41,12 @@ skills:
       level: "avancé"
     - name: "Flask"
       level: "avancé"
-    - name: "Django ORM"
-      level: "avancé"
-      details: "ORM de cœur, ouvert à tout"
     - name: "Microservices"
       level: "expert"
       details: "Architecture, intégration API, déploiement"
     - name: "Automatisation"
       level: "expert"
       details: "Workflows complets, scraping, scheduling"
-    - name: "REST API"
-      level: "expert"
-    - name: "Celery"
-      level: "intermédiaire"
-      details: "Tâches asynchrones"
-    - name: "WebSocket"
-      level: "intermédiaire"
 
   frontend:
     - name: "React"
@@ -95,12 +82,6 @@ skills:
       details: "Cloud Run, Cloud Functions, Compute Engine"
     - name: "GitHub"
       level: "avancé"
-    - name: "CI/CD"
-      level: "intermédiaire"
-      details: "GitHub Actions"
-    - name: "Linux / Bash / WSL"
-      level: "avancé"
-      details: "Environnement de travail quotidien"
     - name: "Netlify"
       level: "avancé"
     - name: "Heroku"
@@ -125,14 +106,6 @@ skills:
       details: "Intégration paiement"
     - name: "UPS / La Poste API"
       details: "Intégration logistique"
-    - name: "Evoliz"
-      details: "Facturation"
-    - name: "HubSpot"
-      details: "CRM"
-    - name: "Lemlist"
-      details: "Emailing"
-    - name: "Slack API"
-      details: "Notifications et logs"
     - name: "Git"
     - name: "VS Code"
     - name: "Claude Code"
@@ -162,34 +135,13 @@ experience:
     company: "Everping"
     location: "Remote"
     period: "2024 - 2026"
-    context: "Dev solo — 25 personnes dans l'entreprise, 1 personne nocode en support"
     description: >
-      Conception et développement de 8 microservices et de multiples scripts
-      d'automatisation pour transformer un flux logistique 100% manuel en
-      processus entièrement automatisé.
-    highlights:
-      - >
-        Automatisation de la mise à jour du catalogue produit : avant, la mise à
-        jour se faisait manuellement sur Google Sheets en consultant chaque site
-        fournisseur un par un (copier-coller ou téléchargement de fichiers Excel),
-        ~1,5 jour de travail. Script de scraping (API quand disponible, sinon
-        téléchargement de fichiers ou scraping pur), rassemblement, tri et insertion
-        automatique en base de données sur scheduler journalier. Temps d'exécution :
-        10 minutes.
-      - >
-        Automatisation du traitement des commandes : notifications en temps réel
-        à la réception, génération automatique de facture pro forma avec lien de
-        paiement (CB via Stripe, virement via Fintecture selon le choix client),
-        envoi automatique par email. Avant : tout était fait manuellement sur
-        chaque service.
-      - >
-        Automatisation de la logistique : création automatique des étiquettes
-        d'envoi UPS, suivi du flux complet avec notifications et logs dans Slack,
-        génération automatique de la facture définitive au pickup UPS.
-      - >
-        Scripts internes : transfert de données entre HubSpot et Lemlist (pas
-        possible nativement), récupération automatique de factures fournisseurs et
-        clients, calcul de marges.
+      Conception et développement de microservices adaptés à la stack de
+      l'entreprise (site et back-office no-code via Airtable, paiements Stripe
+      et Fintecture, livraisons UPS et La Poste). Intégration d'APIs tierces
+      pour automatiser le pôle opérationnel et logistique. Déploiement sur GCP
+      (Cloud Run, Cloud Functions). Objectif : rendre l'application autonome et
+      éliminer les interactions manuelles de gestion.
     tags:
       - python
       - fastapi
@@ -199,43 +151,22 @@ experience:
       - cloud-run
       - airtable
       - stripe
-      - fintecture
-      - ups-api
-      - scraping
-      - slack
+      - api-integration
 
   - title: "Développeur Fullstack Freelance"
     company: "Indépendant"
     location: "Remote"
     period: "2024 - present"
-    context: "Freelance solo — en parallèle d'Everping puis à plein temps"
     description: >
-      Développement backend et fullstack pour 3 clients ainsi que des
-      projets personnels, du site vitrine au SaaS complet avec IA.
-    highlights:
-      - >
-        Site vitrine pour un artiste peintre : React, Vite, React Router —
-        multi-page avec blog, galerie, landing page, pages détaillées par œuvre.
-        Livré et en ligne.
-      - >
-        Application de chat IA : développement backend Django — chat avec
-        support d'images et de fichiers. Backend uniquement, livré et en ligne.
-      - >
-        Application IA Finder : développement backend Django — moteur
-        de recherche IA complet. Backend uniquement, livré et en ligne.
-      - >
-        Projet personnel : application de corrélation factures/paiements via IA
-        (démo visuelle prête, lancement imminent).
-      - >
-        Projet personnel : application de création de formations basées sur les
-        fiches RNCP existantes.
+      Création de sites et applications fullstack pour divers clients : sites
+      vitrines, applications avec backend, agents IA. Du site statique simple
+      au projet complet avec API et intelligence artificielle.
     tags:
       - python
-      - django
       - react
       - typescript
       - fastapi
-      - vite
+      - django
       - freelance
       - agents-ia
 
@@ -244,31 +175,26 @@ experience:
     location: "Bayonne"
     period: "2020 - 2022"
     description: >
-      Création et gestion complète d'une entreprise en solo. Réalisation des
-      travaux d'aménagement de la boutique, lancement en ventes privées sur
-      internet avant l'ouverture physique. Gestion intégrale : achat, vente,
-      logistique, comptabilité, marketing, site internet, relation client.
-      Entrepreneur solo de A à Z.
+      Création et gestion complète d'une entreprise de ventes privées. Lancement
+      d'un e-shop, gestion d'une boutique physique, relation client, logistique,
+      comptabilité. Entrepreneur solo de A à Z.
     tags:
       - entrepreneuriat
       - e-commerce
       - gestion
       - vente
-      - marketing
-      - site-internet
 
   - title: "Technico-commercial — Éclairage & Décoration"
     company: "LI-DESIGN"
     location: "Anglet"
     period: "2018 - 2020"
-    context: "Équipe de 4 personnes"
     description: >
       Vente et prescription en éclairage et décoration d'intérieur B2B.
       Conseil technique aux professionnels, suivi des projets, relation client.
     tags:
       - vente-b2b
       - conseil-technique
-      - eclairage
+      - éclairage
 
 projects:
   - name: "GhostDog CV"
@@ -276,25 +202,23 @@ projects:
     stack: ["FastAPI", "React", "TypeScript", "Claude API", "Rich", "Typer"]
     description: >
       CV multi-rendu : API REST, CLI, site web, PDF, agent IA conversationnel.
-      Une seule source de données YAML alimente 5 rendus différents.
+      Une seule source YAML alimente 5 rendus différents.
     url: "https://github.com/ghostdog-dev/ghostdog-cv"
 
-  - name: "Site Vitrine Artiste"
+  - name: "Bibliothèque IA"
     type: "fullstack"
-    stack: ["React", "Vite", "React Router", "CSS"]
+    stack: ["React", "Python", "API"]
     description: >
-      Site vitrine multi-page pour un artiste peintre : galerie, blog,
-      landing page, pages détaillées par œuvre. Design sur mesure.
-    url: "https://lassegueart.com"
+      Annuaire répertoriant les IA existantes avec fiches descriptives,
+      formations intégrées et suivi de contenu pédagogique.
 
-  - name: "Agent IA Reporting Financier"
+  - name: "Chat IA Multimodal"
     type: "fullstack"
-    stack: ["Python", "Claude API", "API integrations"]
+    stack: ["Python", "React", "Claude API", "OpenAI"]
     description: >
-      Agent IA qui corrèle les données entre emails, systèmes de paiement,
-      facturation et services de livraison pour générer des rapports
-      automatisés sur les paiements, marges et flux financiers.
-      Démo visuelle disponible, lancement imminent.
+      Application de chat IA incluant génération d'images et fonctionnalités
+      LLM dans une interface unifiée.
+    url: "https://chatalienai.com"
 
   - name: "Agent IA Formations RNCP"
     type: "fullstack"
@@ -303,40 +227,39 @@ projects:
       Agent IA spécialisé qui analyse et guide les utilisateurs sur les
       formations en rapport avec les fiches RNCP françaises.
 
-  - name: "Chat IA Multimodal"
-    type: "backend"
-    stack: ["Django", "Claude API", "OpenAI", "REST API"]
+  - name: "Agent IA Reporting Financier"
+    type: "fullstack"
+    stack: ["Python", "Claude API", "API integrations"]
     description: >
-      Backend d'une application de chat IA avec support d'images, fichiers et
-      toutes les fonctionnalités de base des LLM. Développement backend uniquement.
-    url: "https://chatalienai.com"
+      Agent IA qui corrèle les données entre emails, systèmes de paiement,
+      facturation et services de livraison pour générer des rapports automatisés.
 
-  - name: "IA Finder"
-    type: "backend"
-    stack: ["Django", "REST API", "PostgreSQL"]
+  - name: "Site Vitrine Artiste"
+    type: "fullstack"
+    stack: ["React", "Vite", "CSS"]
     description: >
-      Backend d'une application complète de recherche alimentée par IA.
-      Développement backend uniquement. Livrée et en production.
-    url: "https://chatgpt.fr"
+      Site vitrine fullstack pour un artiste, design sur mesure et déploiement
+      statique.
+    url: "https://lassegueart.com"
 
 education:
   - school: "OpenClassrooms"
-    degree: "Développeur Concepteur Logiciel — JavaScript React TypeScript"
+    degree: "Développeur Concepteur Logiciel JS/React/TS — Bac+4"
     level: "Bac+4"
     rncp: "38038"
     year: "2024 - 2026"
     us_equivalent: "Applied Bachelor of Technology — Computer Software Development"
     diploma_image: "/diplomas/diploma-js-react.pdf"
     us_diploma_image: "/diplomas/diploma-bachelor-us.pdf"
-    description: "Formation diplômante axée frontend et fullstack JS/TS/React (Option 1 — Front-end). Équivalence US : Applied Bachelor of Technology."
+    description: "Formation diplômante en développement frontend et fullstack JS/TS/React."
 
   - school: "OpenClassrooms"
-    degree: "Développeur Concepteur Logiciel — Python"
+    degree: "Développeur Concepteur Logiciel Python — Bac+4 (Niveau VI)"
     level: "Bac+4"
     rncp: "38038"
     year: "2023 - 2024"
     diploma_image: "/diplomas/diploma-python.pdf"
-    description: "Formation diplômante axée backend et conception logicielle Python (Option 2 — Back-end)."
+    description: "Formation diplômante en conception logicielle et développement Python."
 
   - school: "Docstring.fr"
     degree: "Formation complète Python"
@@ -346,15 +269,15 @@ education:
   - school: "Udemy"
     degree: "Formations Django & Python — Débutant à Expert"
     year: "2023"
-    description: "Parcours complet Django et Python via Udemy."
+    description: "Parcours complet Django et Python."
 
   - school: "Talis Business School"
-    degree: "BTS NDRC (Négociation et Digitalisation de la Relation Client)"
+    degree: "BTS NDRC"
     year: "2017 - 2020"
     description: "Formation commerciale et relation client digitale."
 
   - school: "Lycée Saint-Joseph, Ustaritz"
-    degree: "Bac Pro Vente"
+    degree: "Bac Pro Vente — Mention Assez Bien"
     level: "Mention Assez Bien"
     year: "2012 - 2015"
     description: "Baccalauréat professionnel vente."
@@ -363,7 +286,7 @@ languages:
   - name: "Français"
     level: "Natif"
   - name: "Anglais"
-    level: "Technique (lecture documentation, code, échanges simples)"
+    level: "Technique (documentation, code, échanges simples)"
 
 interests:
   - "Intelligence artificielle & nouvelles technologies"
