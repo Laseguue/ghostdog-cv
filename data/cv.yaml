@@ -293,3 +293,43 @@ interests:
   - "Jeux vidéo & culture geek"
   - "Sciences, physique & documentaires"
   - "Nature, campagne & animaux"
+
+cover_letter: >
+  Madame, Monsieur,
+
+  Développeur concepteur logiciel fullstack, je me permets de vous adresser ma
+  candidature. Après une première vie d'entrepreneur — création et gestion d'un
+  e-commerce et d'une boutique physique — j'ai opéré une reconversion réussie en
+  2023, transformant mon expérience business en expertise technique pointue.
+
+  Aujourd'hui titulaire de deux certifications Bac+4 (Python et JS/React/TS)
+  délivrées par OpenClassrooms et inscrites au RNCP niveau 6, je maîtrise un
+  stack technique complet : Python expert (FastAPI, Django, Flask), microservices,
+  automatisation, React, TypeScript, et les APIs d'intelligence artificielle
+  (Claude, OpenAI).
+
+  Chez Everping (2024–2026), j'ai conçu et déployé des microservices sur Google
+  Cloud Platform pour automatiser l'intégralité du pôle opérationnel : paiements
+  Stripe et Fintecture, livraisons UPS et La Poste, synchronisation avec Airtable.
+  Résultat : 80 % du temps de traitement éliminé et une capacité de traitement
+  multipliée par 3 sans recrutement supplémentaire.
+
+  En parallèle, en tant que freelance, je conçois des solutions complètes — du
+  site vitrine sur mesure aux agents IA avancés — en remplaçant les plateformes
+  no-code (Webflow, Memberstack, Make) par du code 100 % sur mesure, ce qui
+  permet à mes clients de réduire jusqu'à 70 % leurs coûts d'exploitation tout
+  en gagnant en autonomie technique. Mon projet personnel GhostDog CV illustre
+  cette approche : une seule source de données YAML alimente 5 rendus différents
+  (API REST, CLI, site web, PDF, agent conversationnel).
+
+  Mon profil hybride entrepreneur + technicien me permet de comprendre les enjeux
+  business autant que les contraintes techniques. Je suis convaincu que cette
+  double compétence peut créer une vraie valeur ajoutée au sein de votre équipe.
+
+  Je suis disponible immédiatement et ouvert à des opportunités en CDI ou en
+  freelance, en remote. N'hésitez pas à me contacter si mon parcours vous
+  parle — je serais ravi d'échanger avec vous.
+
+  Cordialement,
+
+  Arthur Seguret

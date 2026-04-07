@@ -6,6 +6,7 @@ from cli.display import (
     print_experience,
     print_projects,
     print_education,
+    print_cover_letter,
     console,
 )
 
@@ -50,6 +51,13 @@ def education() -> None:
     """Affiche la formation."""
     cv = load_cv()
     print_education(cv)
+
+
+@app.command()
+def cover_letter() -> None:
+    """Affiche la lettre de motivation."""
+    cv = load_cv()
+    print_cover_letter(cv)
 
 
 @app.command()
